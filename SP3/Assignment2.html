@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* styles.css */
+:root {
+    --primary-color: #4C3F91;
+    --secondary-color: #9145B6;
+    --tertiary-color: #FF5677;
+    --section-color: #efefef;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main {
+    padding: 20px;
+}
+
+.section {
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--section-color);
+}
+
+.content {
+    text-align: center;
+}
+
+.about-p {
+    width: 50%;
+    margin: auto;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill {
+    text-align: center;
+}
+
+.skill .icon {
+    font-size: 30px;
+}
+
+.progress {
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 10px;
+    width: 100px;
+    margin: 10px auto;
+}
+
+.progress-bar {
+    background-color: var(--secondary-color);
+    height: 100%;
+    border-radius: 5px;
+}
+
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work-item {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.work-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about,
+.contact,
+.social-links {
+    width: 30%;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input[type="text"],
+.contact input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.contact input[type="text"]{
+    width: 100%;
+}
+.contact input[type="submit"]{
+    width: 40%;
+    background-color: var(--section-color);
+}
+
+.social-links h3 {
+    margin-bottom: 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>John</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#work">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="content">
+                <h2>About Me</h2>
+                <p class="about-p">I'm John, a passionate web developer with a love for clean code and beautiful design. With expertise in HTML, CSS, and JavaScript, I enjoy crafting engaging and user-friendly websites. Constantly curious and eager to learn, I thrive on challenges that push my skills to new heights. Let's collaborate and bring your digital ideas to life!</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="content">
+                <h2>My Skills</h2>
+                <div class="skills">
+                    <div class="skill">
+                        <span class="icon">💻</span>
+                        <span class="name">HTML</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="--progress-width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="icon">🎨</span>
+                        <span class="name">CSS</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="--progress-width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="icon">💡</span>
+                        <span class="name">JavaScript</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="--progress-width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="section">
+            <div class="content">
+                <h2>My Work</h2>
+                <div class="work-container">
+                    <div class="work-item">
+                        <img src="https://placehold.co/400x200" alt="Work Sample">
+                        <p>Sample Project Description</p>
+                    </div>
+                    <div class="work-item">
+                        <img src="https://placehold.co/400x200" alt="Work Sample">
+                        <p>Sample Project Description</p>
+                    </div>
+                    <div class="work-item">
+                        <img src="https://placehold.co/400x200" alt="Work Sample">
+                        <p>Sample Project Description</p>
+                    </div>
+                    <div class="work-item">
+                        <img src="https://placehold.co/400x200" alt="Work Sample">
+                        <p>Sample Project Description</p>
+                    </div>
+                    <div class="work-item">
+                        <img src="https://placehold.co/400x200" alt="Work Sample">
+                        <p>Sample Project Description</p>
+                    </div>
+                    <div class="work-item">
+                        <img src="https://placehold.co/400x200" alt="Work Sample">
+                        <p>Sample Project Description</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="about">
+                <h3>About</h3>
+                <p>Contact Us:</p>
+                <p>Email: samiul15-5058@diu.edu.bd</p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+            <div class="contact">
+                <h3>Send Mail</h3>
+                <form>
+                    <input type="text" name="message" placeholder="Write your message here">
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            <div class="social-links">
+                <h3>Social Media</h3>
+                <a href="https://www.linkedin.com/in/john" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+                <a href="https://www.twitter.com/john" target="_blank"><img src="facebook.png" alt="Twitter"></a>
+                <a href="https://www.github.com/john" target="_blank"><img src="github.png" alt="GitHub"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
