@@ -1,0 +1,190 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  padding-top: 20px;
+}
+
+.sidebar h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #333;
+  padding: 10px;
+}
+
+header h1 {
+  margin: auto;
+  color: #fff;
+}
+
+.toggle-btn {
+  /* display: none; */
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.section{
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+  padding: 0 50px;
+}
+
+/* Statistics Start */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjust as needed */
+}
+
+.card {
+  width: 200px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.card p {
+  margin: 10px 0 0;
+  font-size: 16px;
+  color: #666;
+}
+/* Statistics End */
+
+/* Trending Blog Start */
+.blogs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjust as needed */
+  background-color: #666;
+  border-radius: 16px;
+  padding: 20px 0;
+}
+
+.blog-card {
+  width: 200px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.blog-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.growth {
+  margin: 0;
+  font-size: 14px;
+  color: green;
+  font-weight: bold;
+}
+/* Trending Blog End */
+
+/* Comments Start */
+.comments-table {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f0f0f0;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+}
+
+img {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+}
+/* Comments End */
+
+@media screen and (max-width: 600px) {
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+
+  img {
+    width: 30px;
+  }
+}
+/* Comments End */
+
+/* Hide sidebar by default on small screens */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .toggle-btn{
+    display: inline-block;
+  }
+}

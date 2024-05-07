@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <h2>Admin Panel</h2>
+    <ul>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Posts</a></li>
+      <li><a href="#">Comments</a></li>
+      <li><a href="#">Categories</a></li>
+      <li><a href="#">Tags</a></li>
+      <li><a href="#">Settings</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </div>
+
+  <div class="content" id="content">
+    <header>
+      <h1>Dashboard</h1>
+      <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+    </header>
+    <main>
+      <!--Statistics Start-->
+      <div class="section">
+        <h2>Statistics Reports</h2>
+        <div class="cards-container">
+          <div class="card">
+            <h3>Total Posts</h3>
+            <p>100</p>
+          </div>
+          <div class="card">
+            <h3>Total Views</h3>
+            <p>10,000</p>
+          </div>
+          <div class="card">
+            <h3>Total Revenue</h3>
+            <p>$500</p>
+          </div>
+          <div class="card">
+            <h3>Total Watch Time</h3>
+            <p>50 hours</p>
+          </div>
+        </div>
+      </div>
+      <!--Statistics End-->
+
+      <!--Trending Blog Start-->
+      <div class="section">
+        <h2>Trending Blogs</h2>
+        <div class="blogs-container">
+          <div class="blog-card">
+            <p class="growth">+15%</p>
+            <img src="https://cdn.pixabay.com/photo/2024/02/28/07/42/european-shorthair-8601492_1280.jpg" alt="Blog 1">
+            <h3>Blog Title 1</h3>
+          </div>
+          <div class="blog-card">
+            <p class="growth">+10%</p>
+            <img src="https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=0.88847xw:1xh;center,top&resize=1200:*" alt="Blog 2">
+            <h3>Blog Title 2</h3>
+          </div>
+          <div class="blog-card">
+            <p class="growth">+20%</p>
+            <img src="https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=0.88847xw:1xh;center,top&resize=1200:*" alt="Blog 3">
+            <h3>Blog Title 3</h3>
+          </div>
+          <div class="blog-card">
+            <p class="growth">+5%</p>
+            <img src="https://catinaflat.blog/wp-content/uploads/2024/02/cat-home-alone-660x420.jpg?crop=1" alt="Blog 4">
+            <h3>Blog Title 4</h3>
+          </div>
+          <div class="blog-card">
+            <p class="growth">+12%</p>
+            <img src="https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg" alt="Blog 5">
+            <h3>Blog Title 5</h3>
+          </div>
+        </div>
+      </div>
+      <!--Trending Blog End-->
+
+
+      <!--Comments Start-->
+      <div class="section">
+        <h2>Recent Comments</h2>
+        <div class="comments-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Index</th>
+                <th>Avatar</th>
+                <th>Comment</th>
+                <th>Post Title</th>
+                <th>Likes Count</th>
+                <th>Posting Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <img src="https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg" alt="Avatar">
+                </td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                <td>Post 1</td>
+                <td>10</td>
+                <td>2024-05-07</td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>
+                  <img src="https://static.vecteezy.com/system/resources/previews/002/002/297/non_2x/beautiful-woman-avatar-character-icon-free-vector.jpg" alt="Avatar">
+                </td>
+                <td>consectetur, adipisicing elit. Officiis, impedit!</td>
+                <td>Post 4</td>
+                <td>25</td>
+                <td>2024-05-12</td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td>
+                  <img src="https://png.pngtree.com/png-vector/20220518/ourmid/pngtree-circular-avatar-vector-illustration-male-people-person-male-vector-png-image_36446834.png" alt="Avatar">
+                </td>
+                <td>adipisicing elit. Officiis, impedit! ipsum dolor sit</td>
+                <td>Post 9</td>
+                <td>45</td>
+                <td>2024-04-05</td>
+              </tr>
+
+              <tr>
+                <td>4</td>
+                <td>
+                  <img src="https://png.pngtree.com/png-vector/20191103/ourmid/pngtree-handsome-young-guy-avatar-cartoon-style-png-image_1947775.jpg" alt="Avatar">
+                </td>
+                <td>Lorem ipsum dolor sit. adipisicing elit. Officiis, impedit! ipsum dolor sit</td>
+                <td>Post 6</td>
+                <td>66</td>
+                <td>2024-03-02</td>
+              </tr>
+
+              <tr>
+                <td>5</td>
+                <td>
+                  <img src="https://static.vecteezy.com/system/resources/thumbnails/002/002/257/small/beautiful-woman-avatar-character-icon-free-vector.jpg" alt="Avatar">
+                </td>
+                <td>dolor sit. adipisicing elit. Officiis, impedit! ipsum dolor sit</td>
+                <td>Post 12</td>
+                <td>23</td>
+                <td>2024-03-20</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!--Comments End-->
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
