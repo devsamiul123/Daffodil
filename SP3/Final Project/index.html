@@ -4,18 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Panel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="sidebar" id="sidebar">
     <h2>Admin Panel</h2>
     <ul>
-      <li><a href="#">Dashboard</a></li>
-      <li><a href="#">Posts</a></li>
-      <li><a href="#">Comments</a></li>
-      <li><a href="#">Categories</a></li>
-      <li><a href="#">Tags</a></li>
-      <li><a href="#">Settings</a></li>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="post.html">Posts</a></li>
+      <li><a href="comments.html">Comments</a></li>
+      <li><a href="category.html">Categories</a></li>
+      <li><a href="settings.html">Settings</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Registration</a></li>
       <li><a href="#">Logout</a></li>
     </ul>
   </div>
@@ -30,19 +32,19 @@
       <div class="section">
         <h2>Statistics Reports</h2>
         <div class="cards-container">
-          <div class="card">
+          <div class="mycard card">
             <h3>Total Posts</h3>
             <p>100</p>
           </div>
-          <div class="card">
+          <div class="mycard card">
             <h3>Total Views</h3>
             <p>10,000</p>
           </div>
-          <div class="card">
+          <div class="mycard card">
             <h3>Total Revenue</h3>
             <p>$500</p>
           </div>
-          <div class="card">
+          <div class="mycard card">
             <h3>Total Watch Time</h3>
             <p>50 hours</p>
           </div>
@@ -54,31 +56,71 @@
       <div class="section">
         <h2>Trending Blogs</h2>
         <div class="blogs-container">
-          <div class="blog-card">
-            <p class="growth">+15%</p>
-            <img src="https://cdn.pixabay.com/photo/2024/02/28/07/42/european-shorthair-8601492_1280.jpg" alt="Blog 1">
-            <h3>Blog Title 1</h3>
+          <div class="card blog-mycard" style="width: 18rem;">
+            <img src="https://cdn.pixabay.com/photo/2024/02/28/07/42/european-shorthair-8601492_1280.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Blog 1</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
           </div>
-          <div class="blog-card">
-            <p class="growth">+10%</p>
-            <img src="https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=0.88847xw:1xh;center,top&resize=1200:*" alt="Blog 2">
-            <h3>Blog Title 2</h3>
+          <div class="card blog-mycard" style="width: 18rem;">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=0.88847xw:1xh;center,top&resize=1200:*" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Blog 1</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
           </div>
-          <div class="blog-card">
-            <p class="growth">+20%</p>
-            <img src="https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=0.88847xw:1xh;center,top&resize=1200:*" alt="Blog 3">
-            <h3>Blog Title 3</h3>
+          <div class="card blog-mycard" style="width: 18rem;">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=0.88847xw:1xh;center,top&resize=1200:*" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Blog 1</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
           </div>
-          <div class="blog-card">
-            <p class="growth">+5%</p>
-            <img src="https://catinaflat.blog/wp-content/uploads/2024/02/cat-home-alone-660x420.jpg?crop=1" alt="Blog 4">
-            <h3>Blog Title 4</h3>
+          <div class="card blog-mycard" style="width: 18rem;">
+            <img src="https://catinaflat.blog/wp-content/uploads/2024/02/cat-home-alone-660x420.jpg?crop=1" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Blog 1</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
           </div>
-          <div class="blog-card">
-            <p class="growth">+12%</p>
-            <img src="https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg" alt="Blog 5">
-            <h3>Blog Title 5</h3>
+          <div class="card blog-mycard" style="width: 18rem;">
+            <img src="https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Blog 1</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
           </div>
+          <div class="card blog-mycard" style="width: 18rem;">
+            <img src="https://cdn.pixabay.com/photo/2024/02/28/07/42/european-shorthair-8601492_1280.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Blog 1</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+          <div class="card blog-mycard" style="width: 18rem;">
+            <img src="https://catinaflat.blog/wp-content/uploads/2024/02/cat-home-alone-660x420.jpg?crop=1" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Blog 1</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+          <div class="card blog-mycard" style="width: 18rem;">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=0.88847xw:1xh;center,top&resize=1200:*" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Blog 1</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+          
         </div>
       </div>
       <!--Trending Blog End-->
@@ -208,6 +250,8 @@
     </main>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>
 </html>

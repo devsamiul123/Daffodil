@@ -4,6 +4,26 @@ body {
   padding: 0;
 }
 
+/* custom me */
+.mybgcard{
+  /* background-color: #666; */
+  padding: 20px 20px 10px 20px;
+  margin: 10px 0;
+  border-radius: 1em;
+  box-shadow: rgba(145,158,171,0.2) 0px 0px 2px 0px,rgba(145,158,171,0.12) 0px 12px 24px -4px;
+}
+
+/* category */
+.category{
+  padding: 1rem;
+  background-color: antiquewhite;
+  color: chocolate;
+  margin: 1rem;
+  border-radius: 1rem;
+  display: inline-block;
+  box-shadow: rgba(145,158,171,0.2) 0px 0px 2px 0px,rgba(145,158,171,0.12) 0px 12px 24px -4px;
+}
+
 .sidebar {
   height: 100%;
   width: 250px;
@@ -73,7 +93,7 @@ header h1 {
   justify-content: space-around; /* Adjust as needed */
 }
 
-.card {
+.mycard {
   width: 200px;
   background-color: #f0f0f0;
   border-radius: 8px;
@@ -82,13 +102,13 @@ header h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card h3 {
+.mycard h3 {
   margin: 0;
   font-size: 20px;
   color: #333;
 }
 
-.card p {
+.mycard p {
   margin: 10px 0 0;
   font-size: 16px;
   color: #666;
@@ -105,7 +125,7 @@ header h1 {
   padding: 20px 0;
 }
 
-.blog-card {
+.blog-mycard {
   width: 200px;
   background-color: #f0f0f0;
   border-radius: 8px;
@@ -115,7 +135,7 @@ header h1 {
   text-align: center;
 }
 
-.blog-card img {
+.blog-mycard img {
   width: 100%;
   border-radius: 8px;
 }
